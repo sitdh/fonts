@@ -13,5 +13,6 @@ var elixir = require('laravel-elixir');
 
 elixir(function(mix) {
     mix.sass('fonts.sass')
-       .phpUnit();
+        .routes()
+        .phpUnit();
 });
