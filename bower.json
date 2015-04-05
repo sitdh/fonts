@@ -1,0 +1,19 @@
+{
+  "name": "fonts",
+  "version": "0.1.0",
+  "homepage": "https://github.com/sitdh/fonts",
+  "authors": [
+    "Sitdhibong Laokok <sitdhibong@gmail.com>"
+  ],
+  "moduleType": [
+    "globals"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
