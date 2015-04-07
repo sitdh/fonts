@@ -14,10 +14,16 @@ class CreateUsersTable extends Migration {
 	{
 		Schema::create('users', function(Blueprint $table)
 		{
-			$table->increments('id');
-			$table->string('name');
+			$table->bigIncrements('id')->unsigned();
+			$table->string('user_id');
+			$table->string('display_name')->nullable();
 			$table->string('email')->unique();
 			$table->string('password', 60);
+			$table->string('avatar');
+            $table->enum(
+                'account_status', 
+                ['pending', 'activated', 'author', 'administrator', 'blocked']
+            )->default('pending');
 			$table->rememberToken();
 			$table->timestamps();
 		});
